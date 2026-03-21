@@ -40,11 +40,16 @@ header img {
     margin-left: 16px;
 }
 
-header nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-    margin-right: 16px;
+nav {
+    background-color: #264653;
+    padding: 10px;
+}
+
+nav {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
 }
 
 header nav a {
@@ -59,8 +64,16 @@ header nav a:hover {
 
 /* Main content */
 main {
-    width: 840px;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+main img {
+    width: 200px;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 3):
 }
 
 /* Hero section */
@@ -140,6 +153,11 @@ aside img {
     width: 100%;
     height: auto;
     margin-bottom: 8px;
+}
+
+p {
+    padding: 0;
+
 }
 
 /* Footer */
