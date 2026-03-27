@@ -1,180 +1,97 @@
-:root {
-    --primary-color: #055a05;
-    --secondary-color: #f4a261;
-    --accent1-color: #264653;
-    --accent2-color: #e9c46a;
-    --heading-font: "Times New Roman", Georgia, serif;
-    --body-font: Arial, Helvetica, sans-serif;
-}
-
-/* Reset box model */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body styles */
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-    background-color: #f9f9f9;
-    line-height: 1.6;
-}
-
-/* Header styles */
-header {
-    width: 840px;
-    margin: 0 auto;
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-    display: flex;
+/* ===== HEADER ===== */
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    justify-content: space-between;
-    padding: 12px 0;
+    padding: 10px 20px;
+    background-color: #f0f8ff;
 }
 
-header img {
-    display: block;
-    max-height: 80px;
-    margin-left: 16px;
+.logo {
+    width: 80px;
 }
 
-nav {
-    background-color: #264653;
-    padding: 10px;
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
 }
 
-nav {
-    color: white;
-    padding: 10px;
-    display: block;
+.nav a {
     text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
 }
 
-
-/* Main content */
-main {
-    max-width: 800px;
-    margin: 0 auto;
+/* ===== HISTORY SECTION ===== */
+.history {
+    padding: 20px;
 }
 
-main img {
-    width: 200px;
-    height: auto;
-    border: 1px solid #ccc;
-    padding: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 3):
-}
-
-/* Hero section */
-.hero {
-    position: relative;
+.history h2 {
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+    align-items: center;
 }
 
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    background-color: rgba(38, 70, 83, 0.7);
-    /* semi-transparent overlay */
-    color: #fff;
-    font-family: var(--heading-font);
-    font-size: 2rem;
-}
-
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: rgba(244, 162, 97, 0.8);
-    padding: 12px;
-    width: 250px;
-}
-
-.hero article img {
-    float: right;
-    width: 125px;
-    margin-left: 8px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-}
-
-/* Sections */
-section {
-    margin: 16px;
-    padding: 8px;
-}
-
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    margin-bottom: 8px;
-}
-
-/* Paragraphs, nav, article */
-nav,
-p,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
-/* Aside styling */
-aside {
-    width: 300px;
-    margin: 16px auto;
-    padding: 12px;
-    border: 1px solid var(--accent1-color);
-    background-color: #fff8e1;
-}
-
-aside img {
+.history img {
     width: 200px;
-    height: auto;
-    
 }
 
-p {
-    padding: 0;
-
+/* ===== ADVENTURES SECTION ===== */
+.adventures {
+    padding: 20px;
 }
 
-/* Footer */
-footer {
-    margin-top: 20px;
-    border-top: 1px solid #000;
+.adventures h2 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
-/* Social media icons in footer */
-.socialmedia {
+.adventure-gallery {
     display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin-top: 12px;
+    justify-content: space-between;
+    gap: 10px;
 }
 
-.socialmedia a {
-    text-decoration: none;
+figure {
+    flex: 1;
+    text-align: center;
+    margin: 0;
 }
 
-.socialmedia a img {
-    width: 32px;
-    height: 32px;
-    vertical-align: middle;
+figure img {
+    width: 100%;
+    display: block;
 }
 
-.socialmedia a:hover img {
-    opacity: 0.8;
+figcaption {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f8ff;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+}
+
+.social img {
+    width: 30px;
 }
