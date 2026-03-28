@@ -13,6 +13,7 @@
     --background-color: #f0f8ff;
 }
 
+/* Body */
 body {
     font-family: Arial, sans-serif;
     color: var(--text-color);
@@ -86,15 +87,18 @@ header nav a {
     flex-shrink: 0;
 }
 
-/* Sections */
-section {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
+/* Profile Image */
+main > img {
+    display: block;
+    margin: 30px auto;
+    border-radius: 8px;
 }
 
 /* History Section */
 .history {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
     display: flex;
     align-items: center;
     gap: 30px;
@@ -119,6 +123,7 @@ section {
     max-width: 100%;
     border: 5px solid white;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
 }
 
 /* Adventure Section */
@@ -180,4 +185,5 @@ footer nav.socialmedia img {
     width: 45px;
     height: 45px;
     filter: brightness(0) invert(1);
+    /* makes icons white */
 }
