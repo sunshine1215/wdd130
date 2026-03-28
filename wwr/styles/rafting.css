@@ -25,13 +25,18 @@ body {
 header {
     background-color: var(--primary-color);
     padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    height: 50px;
 }
 
 header nav {
     display: flex;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin: 0 auto;
+    gap: 20px;
 }
 
 header nav a {
@@ -40,9 +45,10 @@ header nav a {
     font-weight: bold;
 }
 
-/* Hero Section - Left Aligned */
+/* Hero Section */
 .hero {
     position: relative;
+    /* Required for overlay */
     height: 500px;
     overflow: hidden;
 }
@@ -53,16 +59,12 @@ header nav a {
     object-fit: cover;
 }
 
-.hero .content {
+/* Hero H1 overlay */
+.hero h1 {
     position: absolute;
+    /* Overlay text */
     top: 50px;
     left: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.hero h1 {
     font-size: 3rem;
     color: white;
     background: rgba(0, 0, 0, 0.4);
@@ -71,7 +73,12 @@ header nav a {
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
 
+/* Hero article overlay */
 .hero article {
+    position: absolute;
+    /* Overlay article */
+    bottom: 40px;
+    left: 50px;
     background: white;
     padding: 20px;
     max-width: 320px;
@@ -84,7 +91,8 @@ header nav a {
     width: 100px;
     height: 100px;
     object-fit: cover;
-    flex-shrink: 0;
+    float: right;
+    /* Float image right as required */
 }
 
 /* Profile Image */
@@ -185,5 +193,5 @@ footer nav.socialmedia img {
     width: 45px;
     height: 45px;
     filter: brightness(0) invert(1);
-    /* makes icons white */
+    /* Makes icons white */
 }
