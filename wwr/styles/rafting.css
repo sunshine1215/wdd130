@@ -23,6 +23,7 @@ body {
 /* Header - Fixed Contrast Issue */
 header {
     background-color: var(--primary-color);
+    color: var(--header-text);
     padding: 15px 20px;
     display: flex;
     align-items: center;
@@ -47,7 +48,7 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #e0f7ff;
+    color: var(--accent-color);
 }
 
 header nav a.active {
