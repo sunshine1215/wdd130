@@ -1,5 +1,4 @@
-/* Universal Reset */
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,19 +8,20 @@
 :root {
     --primary-color: #0077b6;
     --accent-color: #023e8a;
-    --text-color: #333;
+    --text-color: #fff;
     --background-color: #f0f8ff;
+    --header-text: #ffffff;
 }
 
 /* Body */
 body {
     font-family: Arial, sans-serif;
-    color: var(--text-color);
+    color: #333;
     background-color: var(--background-color);
     line-height: 1.6;
 }
 
-/* Header */
+/* Header - Fixed Contrast Issue */
 header {
     background-color: var(--primary-color);
     padding: 15px 20px;
@@ -40,15 +40,24 @@ header nav {
 }
 
 header nav a {
-    color: white;
+    color: var(--header-text);
     text-decoration: none;
     font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #e0f7ff;
+}
+
+header nav a.active {
+    border-bottom: 2px solid #fff;
 }
 
 /* Hero Section */
 .hero {
     position: relative;
-    /* Required for overlay */
     height: 500px;
     overflow: hidden;
 }
@@ -62,7 +71,6 @@ header nav a {
 /* Hero H1 overlay */
 .hero h1 {
     position: absolute;
-    /* Overlay text */
     top: 50px;
     left: 50px;
     font-size: 3rem;
@@ -76,7 +84,6 @@ header nav a {
 /* Hero article overlay */
 .hero article {
     position: absolute;
-    /* Overlay article */
     bottom: 40px;
     left: 50px;
     background: white;
@@ -87,12 +94,15 @@ header nav a {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+.hero article p {
+    color: #333;
+}
+
 .hero article img {
     width: 100px;
     height: 100px;
     object-fit: cover;
     float: right;
-    /* Float image right as required */
 }
 
 /* Profile Image */
@@ -100,6 +110,7 @@ main > img {
     display: block;
     margin: 30px auto;
     border-radius: 8px;
+    max-width: 250px;
 }
 
 /* History Section */
@@ -113,7 +124,23 @@ main > img {
     flex-wrap: wrap;
 }
 
-.history-left,
+.history-left {
+    flex: 1;
+    min-width: 280px;
+    color: #333;
+}
+
+.history-left h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.history-left p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
 .history-right {
     flex: 1;
     min-width: 280px;
@@ -125,6 +152,7 @@ main > img {
     background: var(--accent-color);
     padding: 20px;
     text-align: center;
+    border-radius: 8px;
 }
 
 .history-image img {
@@ -169,6 +197,8 @@ main > img {
 figcaption {
     margin-top: 8px;
     font-size: 0.95rem;
+    color: #333;
+    font-weight: 600;
 }
 
 /* Footer */
@@ -177,21 +207,37 @@ footer {
     color: white;
     text-align: center;
     padding: 25px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 footer p {
     margin-bottom: 15px;
+    flex: 1;
+    text-align: left;
 }
 
 footer nav.socialmedia {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 25px;
+}
+
+footer nav.socialmedia a {
+    text-decoration: none;
 }
 
 footer nav.socialmedia img {
     width: 45px;
     height: 45px;
     filter: brightness(0) invert(1);
-    /* Makes icons white */
+    transition: transform 0.3s ease;
 }
+
+footer nav.socialmedia img:hover {
+    transform: scale(1.1);
+}
+
+
