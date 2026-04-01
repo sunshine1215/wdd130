@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us – White Water Rafting</title>
-    <meta name="description" content="Contact White Water Rafting for questions, reservations, or feedback. Find our address, 
-      phone, email, map, and staff information.">
+    <meta name="description"
+      content="Contact White Water Rafting: Address, phone, email, map, employees, and message form.">
     <meta name="author" content="Sarah Itse">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -16,89 +16,99 @@
     <header>
         <img src="images/logo.jpg" alt="White Water Rafting Logo">
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
-        <!-- Company Info -->
-        <h1>White Water Rafting</h1>
-        <section class="company-info">
-            <h2>Contact White Water Rafting</h2>
-            <p>Address: 123 River Road, Adventure City, peru</p>
-            <p>Phone: 788-456-7890</p>
-            <p>Email: whitewaterraft@wrafting.com</p>
+        <!-- Hero Section -->
+        <div class="hero">
+            <img src="images/rafting4.jpg" alt="Rafting Adventure">
+            <h1>Contact White Water Rafting</h1>
+            <article>
+                <img src="images/rafting5.jpg" alt="Rafting Action">
+                <p>We’re here to answer all your questions and help you plan your adventure!</p>
+            </article>
+        </div>
 
-            <!-- Embedded Google Map -->
-            <div class="map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16337995.004956942!2d-94.59684937693389!3d-
-            1.3145194617415432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c850c05914f5%3A0xf29e011279210648!2sPeru!5e0!3m2!1sen!2sng!4v1775000788236!5m2!1sen!2sng"
-                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </section>
+        <!-- Contact Info & Employees -->
+        <section>
+            <h2>Our Contact Information</h2>
+            <p><strong>Address:</strong> Av. Example 123, Lima, Peru</p>
+            <p><strong>Phone:</strong> +51 123 456 789</p>
+            <p><strong>Email:</strong> whitewater@rafting.com</p>
 
-        <!-- Employee Profiles -->
-        <section class="employees">
-            <h2>Meet Our Team</h2>
-            <div class="employee">
+            <h3>Meet Our Team</h3>
+            <figure>
                 <img src="images/employee1.jpg" alt="Jane Adams">
-                <p>Jane Adams – Operations Manager</p>
-            </div>
-            <div class="employee">
+                <figcaption>Jane Adams - Guide</figcaption>
+            </figure>
+            <figure>
                 <img src="images/employee2.jpg" alt="John Smith">
-                <p>John Smith – Safety Coordinator</p>
-            </div>
-            <div class="employee">
+                <figcaption>John Smith - Operations</figcaption>
+            </figure>
+            <figure>
                 <img src="images/employee3.jpg" alt="Emily Davis">
-                <p>Emily Davis – Customer Service Lead</p>
-            </div>
+                <figcaption>Emily Davis - Customer Support</figcaption>
+            </figure>
         </section>
 
-        <!-- Contact Form -->
-        <section class="contact-form">
+        <!-- Contact Form Section -->
+        <section>
             <h2>Send Us a Message</h2>
-            <form class="contact-form">
+            <form action="#" method="post">
+                <!-- User Name -->
+                <label for="userName">Name:</label>
+                <input type="text" id="userName" name="userName" required>
 
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+                <!-- User Email -->
+                <label for="userEmail">Email:</label>
+                <input type="email" id="userEmail" name="userEmail" required>
 
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email">
+                <!-- Purpose (radio) -->
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <label>
+                        <input type="radio" name="purpose" value="general" required>
+                        General Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="website">
+                        Website
+                    </label>
+                </fieldset>
 
-                <p>Purpose:</p>
+                <!-- Message -->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
 
-                <input type="radio" id="general" name="purpose">
-                <label for="general">General Inquiry</label>
+                <!-- Newsletter Checkbox -->
+                <label>
+                    <input type="checkbox" name="newsletter">
+                    Please do not subscribe me to the monthly newsletter
+                </label>
 
-                <input type="radio" id="reservation" name="purpose">
-                <label for="reservation">Reservation</label>
-
-                <input type="radio" id="feedback" name="purpose">
-                <label for="feedback">Feedback</label>
-
-                <br><br>
-
-                <textarea id="message" name="message"></textarea>
-
-                <br><br>
-
-                <input type="checkbox" id="subscribe" name="subscribe">
-                <label for="subscribe">Subscribe to newsletter</label>
-
-                <br><br>
-
-                <button type="submit">Send Message</button>
-
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
             </form>
+        </section>
+
+        <!-- Map Section -->
+        <section>
+            <h2>Our Location</h2>
+            <p>Find us in Lima, Peru:</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.123456789!2d-77.042793!3d-12.046374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9d123456789%3A0xabcdef123456789!2sLima%2C%20Peru!5e0!3m2!1sen!2sus!4v1234567890"
+              width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </section>
     </main>
 
@@ -106,15 +116,10 @@
     <footer>
         <p>© 2026 White Water Rafting | Sarah Itse | All rights reserved</p>
         <nav class="socialmedia">
-            <a href="https://www.facebook.com">
-                <img src="images/facebook.jpg" alt="Facebook social media icon">
-            </a>
-            <a href="https://www.linkedin.com">
-                <img src="images/linkedin.jpg" alt="LinkedIn social media icon">
-            </a>
-            <a href="https://www.instagram.com">
-                <img src="images/instagram.jpg" alt="Instagram social media icon">
-            </a>
+            <a href="#"><img src="images/facebook.jpg" alt="Facebook social media icon"></a>
+            <a href="#"><img src="images/linkedin.jpg" alt="LinkedIn social media icon"></a>
+            <a href="#"><img src="images/instagram.jpg" alt="Instagram social media icon"></a>
+        </nav>
     </footer>
 </body>
 
