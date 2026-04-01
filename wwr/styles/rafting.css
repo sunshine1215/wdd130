@@ -14,7 +14,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: var(--text-color);
     line-height: 1.6;
 }
 
@@ -24,7 +23,6 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
-    background-color: var(--primary-color);
 }
 
 header img {
@@ -37,7 +35,7 @@ header nav a {
     color: var(--accent-color);
 }
 
-iframe: {
+iframe {
     border: 0;
 }
 
