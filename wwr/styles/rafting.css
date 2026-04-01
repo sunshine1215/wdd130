@@ -38,6 +38,13 @@ header nav a {
     color: var(--accent-color);
     font-weight: bold;
 }
+iframe:{
+    border: 0;
+}
+
+map{
+    border: 0;
+}
 
 /* Hero Section */
 .hero {
@@ -85,7 +92,7 @@ main section {
 
 main section h2 {
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: rgb(90,  60, 140)
 }
 
 main section p {
