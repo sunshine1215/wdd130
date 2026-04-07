@@ -9,6 +9,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    color: #000;
+    background-color: #fff;
 }
 
 /* ===== HEADER ===== */
@@ -225,6 +227,6 @@ footer p {
     gap: 10px;
 }
 
-.social img{
+.social img {
     width: 30px;
 }
