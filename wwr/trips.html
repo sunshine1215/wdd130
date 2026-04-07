@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 130 – White Water Rafting – Trips by Sarah Itse</title>
-    <meta name="description" content="Explore our rafting trips and choose your next adventure.">
+    <meta name="description"
+      content="WDD 130 project by Sarah Itse showcasing a white water rafting website with history, adventures, and company information.">
+    <meta name="author" content="Sarah Itse">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -24,100 +26,106 @@
 
     <!-- MAIN -->
     <main>
-        <h1>WDD 130 | Experience the Adventure of a Lifetime</h1>
-        <img src="images/profile.jpg" alt="profile picture os sarah" width="200" </main>
+        <h1>WDD 130 | Experience the Adventure of a lifetime</h1>
+        <img src="images/profile.jpg" alt="Profile Picture" width="300" height="300">
+    </main>
+    <!-- CALL TO ACTION -->
+    <section class="cta">
+        <h1>Our Rafting Trips</h1>
+        <p>Ready for adventure? Contact us today and book your unforgettable experience!</p>
+        <a href="contact.html" class="btn">Contact Us</a>
+    </section>
 
-        <!-- CALL TO ACTION -->
-        <section class="cta">
-            <h1>Our Rafting Trips</h1>
-            <p>Ready for adventure? Contact us today and book your unforgettable experience!</p>
-            <a href="contact.html" class="btn">Contact Us</a>
-        </section>
+    <!-- TRIP DESCRIPTIONS -->
+    <section class="trip-cards">
 
-        <!-- TRIP DESCRIPTIONS -->
-        <section class="trip-cards">
+        <div>
+            <img src="images/rafting1.jpg" alt="Rafting on Los Dientes del Diablo rapids">
+            <h2>Los Dientes del Diablo</h2>
+            <p>
+                This is our most intense rafting experience, designed for thrill-seekers and
+                experienced rafters.
+                Navigate powerful rapids and test your limits in this unforgettable full-day
+                adventure.
+            </p>
+        </div>
 
-            <div>
-                <img src="images/rafting1.jpg" alt="Rafting on Los Dientes del Diablo rapids">
-                <h2>Los Dientes del Diablo</h2>
-                <p>
-                    This is our most intense rafting experience, designed for thrill-seekers and
-                    experienced rafters.
-                    Navigate powerful rapids and test your limits in this unforgettable full-day
-                    adventure.
-                </p>
-            </div>
+        <div>
+            <img src="images/rafting2.jpg" alt="Big Mallard rafting trip">
+            <h2>Big Mallard</h2>
+            <p>
+                A fun and safe rafting trip perfect for families and beginners.
+                Enjoy scenic views and moderate rapids with our expert guides.
+            </p>
+        </div>
 
-            <div>
-                <img src="images/rafting2.jpg" alt="Big Mallard rafting trip">
-                <h2>Big Mallard</h2>
-                <p>
-                    A fun and safe rafting trip perfect for families and beginners.
-                    Enjoy scenic views and moderate rapids with our expert guides.
-                </p>
-            </div>
+        <div>
+            <img src="images/rafting3.jpg" alt="Half day rafting adventure">
+            <h2>Half Day Adventure</h2>
+            <p>
+                Short on time? This half-day trip delivers excitement without taking up your
+                entire day.
+                Ideal for first-timers and those looking for a quick adventure.
+            </p>
+        </div>
 
-            <div>
-                <img src="images/rafting3.jpg" alt="Half day rafting adventure">
-                <h2>Half Day Adventure</h2>
-                <p>
-                    Short on time? This half-day trip delivers excitement without taking up your
-                    entire day.
-                    Ideal for first-timers and those looking for a quick adventure.
-                </p>
-            </div>
+    </section>
 
-        </section>
+    <!-- TABLE -->
+    <section class="trip-table">
+        <h2>Available Trips</h2>
 
-        <!-- TABLE -->
-        <section class="trip-table">
-            <h2>Available Trips</h2>
+        <table border="5px">
+            <thead>
+                <tr>
+                    <th>Trip</th>
+                    <th>Duration</th>
+                    <th>Difficulty</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
 
-            <table border="5px">
-                <thead>
-                    <tr>
-                        <th>Trip</th>
-                        <th>Duration</th>
-                        <th>Difficulty</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
+            <tbody>
+                <tr>
+                    <td>Los Dientes del Diablo</td>
+                    <td>Full Day</td>
+                    <td>Advanced</td>
+                    <td>$150</td>
+                </tr>
 
-                <tbody>
-                    <tr>
-                        <td>Los Dientes del Diablo</td>
-                        <td>Full Day</td>
-                        <td>Advanced</td>
-                        <td>$150</td>
-                    </tr>
+                <tr>
+                    <td>Big Mallard</td>
+                    <td>Half Day</td>
+                    <td>Beginner</td>
+                    <td>$80</td>
+                </tr>
 
-                    <tr>
-                        <td>Big Mallard</td>
-                        <td>Half Day</td>
-                        <td>Beginner</td>
-                        <td>$80</td>
-                    </tr>
-
-                    <tr>
-                        <td>Half day Adventure</td>
-                        <td>Half Day</td>
-                        <td>Intermediate</td>
-                        <td>$100</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+                <tr>
+                    <td>Half day Adventure</td>
+                    <td>Half Day</td>
+                    <td>Intermediate</td>
+                    <td>$100</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
     </main>
 
     <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 Sarah Itse | Rafting Company</p>
-        <div class="social">
-            <img src="images/facebook.jpg" alt="Facebook social media icon">
-            <img src="images/linkedin.jpg" alt="LinkedIn social media icon">
-            <img src="images/instagram.jpg" alt="Instagram social media icon">
-        </div>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.jpg" alt="Facebook icon image">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/linkedin.jpg" alt="Linkedin icon image">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.jpg" alt="Instagram icon image">
+            </a>
+        </nav>
+        <p>&copy; 2026 Sarah Itse| Rafting Company</p>
     </footer>
 
 </body>
